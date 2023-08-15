@@ -1,3 +1,7 @@
 #Home {
+    background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/f/40/5adf5e016c5df/clean.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
 }
