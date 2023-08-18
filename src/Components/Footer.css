@@ -1,11 +1,10 @@
 #Footer {
     height: fit-content;
-    background-color: #460C68;
+    background: linear-gradient(to bottom, #94B3FD, #460C68);
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 100px;
     padding-bottom: 100px;
-    color: white;
 }
 
 #Footer a {

@@ -1,7 +1,44 @@
 #Home {
-    background-image: url('https://cdn.marvel.com/u/prod/marvel/i/mg/f/40/5adf5e016c5df/clean.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
 }
+
+#Welcome-Message {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+#Welcome-Message {
+    font-size: clamp(5px, 4vw, 35px);
+}
+
+#Home-Display {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    padding: 15px;
+}
+
+#Home-Loading {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+    place-items: center;
+}
+
+.rotate {
+    animation: rotateAnimation 2s linear infinite;
+  }
+
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

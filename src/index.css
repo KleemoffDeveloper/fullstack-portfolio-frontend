@@ -4,6 +4,36 @@
     margin: 0;
 }
 
+body {
+    background-color: rgb(27, 32, 35);
+    color: white;
+}
+
 .App {
     font-family: 'Saira', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    min-width: 150px;
+    font-size: x-large;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: linear-gradient(to bottom, white, grey);
+}
+
+.Main-Title {
+    background: -webkit-linear-gradient(#ff2a98, #00fbff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img {
+    width: 56px;
+}
+
+ul {
+    padding: 0;
 }

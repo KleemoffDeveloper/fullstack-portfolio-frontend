@@ -1,7 +1,10 @@
 #Navbar {
-    background-color: #460C68;
-    padding: 15px;
-    color: white;
+    display: grid;
+    grid-auto-flow: column;
+    background: linear-gradient(to bottom, #7F167F, #f56eb4d5);
+    /* padding: 15px; */
+    width: 100%;
+    box-shadow: 1px 1px 30px cyan;
 }
 
 .Logo {
@@ -13,7 +16,9 @@
     gap: 15px;
     cursor: pointer;
     padding: 15px;
+    margin: 15px;
     transition: 0.5s;
+    font-size: large;
 }
 
 .Logo:hover {
@@ -22,5 +27,33 @@
 }
 
 .Logo img {
-    width: 56px;
+    width: 36px;
+}
+
+.Buttons {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 20px;
+    justify-content: right;
+}
+
+.Buttons button {
+    box-shadow: 1px 1px 10px #7F167F;
+    border: 3px solid black;
+    transition: 0.2s;
+}
+
+.Buttons button:hover {
+    opacity: 75%;
+    transition: 0.2s;
+}
+
+.Buttons button:active {
+    opacity: 50%;
+}
+
+@media screen and (max-width: 660px) {
+    .Buttons {
+        display: none;
+    }
 }
