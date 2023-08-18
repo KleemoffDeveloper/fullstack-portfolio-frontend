@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/fullstack-portfolio-frontend/static/css/main.ea520171.css",
-    "main.js": "/fullstack-portfolio-frontend/static/js/main.d2313bec.js",
+    "main.css": "/fullstack-portfolio-frontend/static/css/main.307be80f.css",
+    "main.js": "/fullstack-portfolio-frontend/static/js/main.508c615c.js",
     "static/media/loading-svgrepo-com.png": "/fullstack-portfolio-frontend/static/media/loading-svgrepo-com.22b182699d5a5315bef2.png",
     "index.html": "/fullstack-portfolio-frontend/index.html",
-    "main.ea520171.css.map": "/fullstack-portfolio-frontend/static/css/main.ea520171.css.map",
-    "main.d2313bec.js.map": "/fullstack-portfolio-frontend/static/js/main.d2313bec.js.map"
+    "main.307be80f.css.map": "/fullstack-portfolio-frontend/static/css/main.307be80f.css.map",
+    "main.508c615c.js.map": "/fullstack-portfolio-frontend/static/js/main.508c615c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea520171.css",
-    "static/js/main.d2313bec.js"
+    "static/css/main.307be80f.css",
+    "static/js/main.508c615c.js"
   ]
 }
