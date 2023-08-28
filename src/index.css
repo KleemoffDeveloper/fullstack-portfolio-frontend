@@ -24,6 +24,10 @@ button {
     background: linear-gradient(to bottom, white, grey);
 }
 
+img {
+    width: 56px;
+}
+
 .Main-Title {
     background: -webkit-linear-gradient(#ff2a98, #00fbff);
     -webkit-background-clip: text;
