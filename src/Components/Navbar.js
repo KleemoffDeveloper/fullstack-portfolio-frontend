@@ -1,6 +1,6 @@
 import "./Navbar.css";
 
-export default function Navbar({setPage}) {
+export default function Navbar({setPage, charactersLoaded}) {
   return (
     <div id="Navbar">
       <div className="Logo" onClick={() => setPage('')}>
@@ -8,9 +8,9 @@ export default function Navbar({setPage}) {
         <h2>Spider-Verse</h2>
       </div>
       
-      <div className="Buttons">
-        <button onClick={() => setPage('View All')}>View</button>
-        <button onClick={() => setPage('Create Form')}>Create</button>
+      <div className="Buttons" style={{opacity:`${charactersLoaded ? 100 : 50}%`}}>
+        <button onClick={() => {if(!charactersLoaded){return;}setPage('View All')}}>View</button>
+        <button onClick={() => {if(!charactersLoaded){return;}setPage('Create Form')}}>Create</button>
       </div>
     </div>
   );

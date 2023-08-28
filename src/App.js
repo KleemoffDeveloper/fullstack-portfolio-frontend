@@ -8,17 +8,18 @@ import CharacterView from "./Components/CharacterView";
 
 function App() {
   const [characterList, setCharacterList] = useState([]);
+  const [charactersLoaded, setCharactersLoaded] = useState(false)
   useEffect(() => {
     fetch("https://spiderverse-api.onrender.com/characters")
       .then((response) => response.json())
-      .then((data) => setCharacterList(data))
+      .then((data) => {setCharacterList(data); setCharactersLoaded(true)})
       .catch((error) => console.log(error));
   }, []);
   const [page, setPage] = useState("");
   const [character, setCharacter] = useState({});
   return (
     <div className="App">
-      <Navbar setPage={setPage} />
+      <Navbar setPage={setPage} charactersLoaded={charactersLoaded}/>
       {!page ? (
         <Home characterList={characterList} setPage={setPage} setCharacter={setCharacter}/>
       ) : page === "View All" ? (

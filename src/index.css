@@ -88,3 +88,10 @@ ul {
     height: 140px;
     transition: 0.1s;
 }
+
+@media screen and (max-width: 1000px) {
+    .preview-grid {
+      border-radius: 0;
+    }
+  }
+  

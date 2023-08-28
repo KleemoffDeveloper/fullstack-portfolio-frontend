@@ -1,3 +1,16 @@
 .create-form {
     min-height: 100vh;
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+    text-align: center;
+}
+
+.image-gallery {
+    height: 200px;
+}
+
+.input-field {
+    display: grid;
+    text-align: left;
 }
