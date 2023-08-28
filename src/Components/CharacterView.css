@@ -1,0 +1,17 @@
+.character-view {
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+    margin: 55px;
+}
+
+.character-view .banner {
+    max-width: 600px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid cyan;
+}

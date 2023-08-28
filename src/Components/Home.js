@@ -1,14 +1,7 @@
-import { useEffect, useState } from "react";
+import CharacterPreview from "./CharacterPreview";
 import "./Home.css";
 
-export default function Home() {
-  const [characterList, setCharacterList] = useState([]);
-  useEffect(() => {
-    fetch("https://spiderverse-api.onrender.com/characters")
-      .then((response) => response.json())
-      .then((data) => setCharacterList(data))
-      .catch((error) => console.log(error));
-  }, []);
+export default function Home({characterList, setPage, setCharacter}) {
   return (
     <div id="Home">
       <div id="Welcome-Message">
@@ -18,7 +11,7 @@ export default function Home() {
         <p>View or create new Spider People!</p>
       </div>
       <ul id="Home-Display">
-        {characterList.length > 0 ? <div className="preview-grid">{characterList.map((character) => <div className="character-preview" style={{backgroundImage:`url(${character.images[0]})`}}>{/*<img src={character.images[0]}/>*/}<p className="name">{character.name}</p></div>)}</div> : (
+        {characterList.length > 0 ? <div className="preview-grid">{characterList.filter((c,i)=>i<6).map((character) => <CharacterPreview character={character} setPage={setPage} setCharacter={setCharacter}/>)}</div> : (
           <div id="Home-Loading">
             <img
               className="rotate"
