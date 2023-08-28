@@ -30,10 +30,57 @@ button {
     -webkit-text-fill-color: transparent;
 }
 
-img {
-    width: 56px;
-}
-
 ul {
     padding: 0;
+}
+
+.preview-grid {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    gap: 55px;
+    background-color: rgba(0, 0, 0, 0.461);
+    border-radius: 8px;
+    border: 1px solid #00fbff;
+    overflow-x: scroll;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.character-preview {
+    cursor: pointer;
+    margin: 15px;
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+    align-items: flex-end;
+    border: 1px solid #00fbff;
+    width: 300px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    border-radius: 16px;
+    transition: 0.2s;
+}
+
+.character-preview .name {
+    background-color: rgba(0, 0, 0, 0.918);
+    padding: 5px;
+    border-radius: 8px;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.character-preview:hover {
+    border: 1px solid #ff2a98;
+    transition: 0.2s;
+}
+
+.character-preview:active {
+    width: 290px;
+    height: 140px;
+    transition: 0.1s;
 }

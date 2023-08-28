@@ -4,6 +4,13 @@
     place-items: center;
     padding-left: 15%;
     padding-right: 15%;
+    background-image: url('https://raw.githubusercontent.com/KleemoffDeveloper/fullstack-portfolio-frontend/main/public/Spider-Verse-Graphic.png');
+}
+
+@media screen and (max-width: 1000px) {
+  #Home {
+    padding: 0;
+  }
 }
 
 #Welcome-Message {
